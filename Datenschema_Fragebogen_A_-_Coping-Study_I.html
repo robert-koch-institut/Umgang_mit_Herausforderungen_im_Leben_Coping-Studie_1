@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; line-height:1.6; margin:0; padding:20px; background:#f6f8fa; color:#24292e; }
+.content { max-width:80%; margin:0 auto; background:#fff; padding:20px; border-radius:8px; box-shadow:0 4px 6px rgba(0,0,0,.1); }
+h1 { font-size:2em; margin-bottom:.5em; }
+p { margin-bottom:1.5em; color:#586069; }
+table { width:100%; border-collapse:collapse; margin-bottom:1.5em; background:#fff; border:1px solid #dfe2e5; }
+th, td { padding:8px 12px; border:1px solid #dfe2e5; text-align:left; }
+th { background:#f6f8fa; font-weight:bold; }
+/* Gruppiertes Zebra nach erster Spalte (record) */
+.row-even td { background:#f6f8fa; }
+.row-odd  td { background:#ffffff; }
+/* Beschreibungsspalte darf umbrechen */
+td:nth-child(3), th:nth-child(3) { max-width:1300px; word-wrap:break-word; white-space:normal; }
+</style>
+</head>
+<body>
+<div class="content">
+<h1>Datenschema Fragebogen A | Umgang mit Herausforderungen im Leben - Coping-Studie I</h1>
+<p>Das vorliegenden Datenschema ist eine eindeutige, vollständige und maschinenlesbare Repräsentation der beantragbaren Rohdaten des Fragebogens A der Studie 'Umgang mit Herausforderungen im Leben - Coping-Studie I' mit allen Details. Das Datenschema orientiert sich am Datapackage-Format (v2). Informationen zum Datapackage Data Standard finden Sie unter <a href="https://datapackage.org/." target="_blank">https://datapackage.org/.</a> Mehr Information über den Datensatz finden sie auf Zenodo (<a href="https://doi.org/10.5281/zenodo.13304390" target="_blank">https://doi.org/10.5281/zenodo.13304390</a>) oder Github (<a href="https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1" target="_blank">https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1</a>)</p>
+<table>
+<tr>
+<th>Variable</th><th>Typ</th><th>Beschreibung</th><th>Werte</th><th>Werte Definition</th>
+</tr>
+<tr class="row-even"><td rowspan="1">record</td><td rowspan="1">integer</td><td rowspan="1">Record number (Open numeric response)</td><td>-</td><td>-</td></tr>
+<tr class="row-odd"><td rowspan="1">qtime</td><td rowspan="1">number</td><td rowspan="1">Interviewzeit in Sekunden</td><td>[0 - 999999]</td><td>-</td></tr>
+<tr class="row-even"><td rowspan="2">fb</td><td rowspan="2">string</td><td rowspan="2">Variante des Fragebogens</td><td>1</td><td>Fragebogen A</td></tr>
+<tr class="row-even"><td>2</td><td>Fragebogen B</td></tr>
+<tr class="row-odd"><td rowspan="1">age</td><td rowspan="1">integer</td><td rowspan="1">Wie alt sind Sie (Angabe in Jahren):</td><td>[0 - 99]</td><td>-</td></tr>
+<tr class="row-even"><td rowspan="3">sex</td><td rowspan="3">string</td><td rowspan="3">Welches Geschlecht haben Sie?</td><td>1</td><td>Männlich</td></tr>
+<tr class="row-even"><td>2</td><td>Weiblich</td></tr>
+<tr class="row-even"><td>3</td><td>Divers</td></tr>
+<tr class="row-odd"><td rowspan="5">fam</td><td rowspan="5">string</td><td rowspan="5">Welchen Familienstand haben Sie?</td><td>1</td><td>verheiratet oder in fester Partnerschaft</td></tr>
+<tr class="row-odd"><td>2</td><td>verheiratet aber getrennt lebend</td></tr>
+<tr class="row-odd"><td>3</td><td>geschieden</td></tr>
+<tr class="row-odd"><td>4</td><td>verwitwet</td></tr>
+<tr class="row-odd"><td>5</td><td>ledig</td></tr>
+<tr class="row-even"><td rowspan="8">school</td><td rowspan="8">string</td><td rowspan="8">Welchen höchsten allgemeinbildenden Schulabschluss haben Sie?</td><td>1</td><td>Haupt- oder Volksschulabschluss</td></tr>
+<tr class="row-even"><td>2</td><td>Realschulabschluss/Mittlere Reife/Fachschulreife</td></tr>
+<tr class="row-even"><td>3</td><td>POS (Polytechn. Oberschule) bzw. 10. Klasse (vor 1965: 8. Klasse)</td></tr>
+<tr class="row-even"><td>4</td><td>Fachhochschulreife/Abschluss einer Fachoberschule</td></tr>
+<tr class="row-even"><td>5</td><td>Abitur, allgemeine Hochschulreife</td></tr>
+<tr class="row-even"><td>6</td><td>Anderen Schulabschluss (z.B. im Ausland erworben)</td></tr>
+<tr class="row-even"><td>7</td><td>Schule beendet ohne Schulabschluss</td></tr>
+<tr class="row-even"><td>8</td><td>Noch keinen Schulabschluss</td></tr>
+<tr class="row-odd"><td rowspan="9">employ</td><td rowspan="9">string</td><td rowspan="9">Welche Lebenssituation trifft derzeit überwiegend auf Sie zu?</td><td>1</td><td>Ich bin erwerbstätig in Vollzeit, gemeint ist auch Berufsausbildung oder Selbständigkeit</td></tr>
+<tr class="row-odd"><td>2</td><td>Ich bin erwerbstätig in Teilzeit, gemeint ist auch Berufsausbildung oder Selbständigkeit.</td></tr>
+<tr class="row-odd"><td>3</td><td>Ich bin derzeit in Kurzarbeit.</td></tr>
+<tr class="row-odd"><td>4</td><td>Ich bin geringfügig erwerbstätig, z.B. 450-Euro-Job, Minijob.</td></tr>
+<tr class="row-odd"><td>5</td><td>Ich bin arbeitslos oder arbeitssuchend bei der Agentur für Arbeit gemeldet, gemeint ist auch "Ein-Euro-Job".</td></tr>
+<tr class="row-odd"><td>6</td><td>Ich bin im Ruhestand oder Vorruhestand.</td></tr>
+<tr class="row-odd"><td>7</td><td>Ich bin Schüler, Student, Praktikant, Teilnehmer an Fortbildungsmaßnahmen, übe Freiwilligendienst aus.</td></tr>
+<tr class="row-odd"><td>8</td><td>Ich bin als Hausfrau/Hausmann tätig, betreue Kinder oder hilfsbedürftige Personen.</td></tr>
+<tr class="row-odd"><td>9</td><td>Ich bin aus anderen Gründen nicht erwerbstätig.</td></tr>
+<tr class="row-even"><td rowspan="2">migra1</td><td rowspan="2">string</td><td rowspan="2">In welchem Land sind Sie geboren?</td><td>1</td><td>In Deutschland</td></tr>
+<tr class="row-even"><td>2</td><td>In einem anderen Land</td></tr>
+<tr class="row-odd"><td rowspan="3">migra2</td><td rowspan="3">string</td><td rowspan="3">In welchem Land sind Ihre Eltern geboren?</td><td>1</td><td>Beide Elternteile in Deutschland</td></tr>
+<tr class="row-odd"><td>2</td><td>Ein Elternteil in Deutschland, ein Elternteil in einem anderen Land</td></tr>
+<tr class="row-odd"><td>3</td><td>Beide Elternteile in einem anderen Land</td></tr>
+<tr class="row-even"><td rowspan="5">asku1</td><td rowspan="5">string</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-even"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-even"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">asku2</td><td rowspan="5">string</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Die meisten Probleme kann ich aus eigener Kraft gut meistern.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-odd"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-odd"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">asku3</td><td rowspan="5">string</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-even"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-even"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">ie1</td><td rowspan="5">string</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Ich habe mein Leben selbst in der Hand.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-odd"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-odd"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">ie2</td><td rowspan="5">string</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Wenn ich mich anstrenge, werde ich auch Erfolg haben.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-even"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-even"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">ie3</td><td rowspan="5">string</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft. Egal ob privat oder im Beruf: <br><br>&emsp;Mein Leben wird zum großen Teil von anderen bestimmt.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-odd"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-odd"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">ie4</td><td rowspan="5">string</td><td rowspan="5">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Meine Pläne werden oft vom Schicksal durchkreuzt.</td><td>1</td><td>trifft gar nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft wenig zu</td></tr>
+<tr class="row-even"><td>3</td><td>trifft etwas zu</td></tr>
+<tr class="row-even"><td>4</td><td>trifft ziemlich zu</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="7">swl</td><td rowspan="7">string</td><td rowspan="7">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Ich bin mit meinem Leben zufrieden.</td><td>1</td><td>starke Ablehnung</td></tr>
+<tr class="row-odd"><td>2</td><td>Ablehnung</td></tr>
+<tr class="row-odd"><td>3</td><td>leichte Ablehnung</td></tr>
+<tr class="row-odd"><td>4</td><td>weder Ablehnung noch Zustimmung</td></tr>
+<tr class="row-odd"><td>5</td><td>leichte Zustimmung</td></tr>
+<tr class="row-odd"><td>6</td><td>Zustimmung</td></tr>
+<tr class="row-odd"><td>7</td><td>starke Zustimmung</td></tr>
+<tr class="row-even"><td rowspan="7">hap</td><td rowspan="7">string</td><td rowspan="7">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Ich fühle mich im Allgemeinen glücklich.</td><td>1</td><td>starke Ablehnung</td></tr>
+<tr class="row-even"><td>2</td><td>Ablehnung</td></tr>
+<tr class="row-even"><td>3</td><td>leichte Ablehnung</td></tr>
+<tr class="row-even"><td>4</td><td>weder Ablehnung noch Zustimmung</td></tr>
+<tr class="row-even"><td>5</td><td>leichte Zustimmung</td></tr>
+<tr class="row-even"><td>6</td><td>Zustimmung</td></tr>
+<tr class="row-even"><td>7</td><td>starke Zustimmung</td></tr>
+<tr class="row-odd"><td rowspan="7">mean</td><td rowspan="7">string</td><td rowspan="7">Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: <br><br>&emsp;Ich kenne den Sinn meines Lebens.</td><td>1</td><td>starke Ablehnung</td></tr>
+<tr class="row-odd"><td>2</td><td>Ablehnung</td></tr>
+<tr class="row-odd"><td>3</td><td>leichte Ablehnung</td></tr>
+<tr class="row-odd"><td>4</td><td>weder Ablehnung noch Zustimmung</td></tr>
+<tr class="row-odd"><td>5</td><td>leichte Zustimmung</td></tr>
+<tr class="row-odd"><td>6</td><td>Zustimmung</td></tr>
+<tr class="row-odd"><td>7</td><td>starke Zustimmung</td></tr>
+<tr class="row-even"><td rowspan="5">bfi1</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich bin eher zurückhaltend, reserviert.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">bfi2</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich schenke anderen leicht Vertrauen, glaube an das Gute im Menschen.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">bfi3</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich bin bequem, neige zur Faulheit.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">bfi4</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich bin entspannt, lasse mich durch Stress nicht aus der Ruhe bringen.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">bfi5</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich habe nur wenig künstlerisches Interesse.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">bfi6</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich gehe aus mir heraus, bin gesellig.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">bfi7</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich neige dazu, andere zu kritisieren.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">bfi8</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich erledige Aufgaben gründlich.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="5">bfi9</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich werde leicht nervös und unsicher.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-even"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-even"><td>3</td><td>weder noch</td></tr>
+<tr class="row-even"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-even"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-odd"><td rowspan="5">bfi10</td><td rowspan="5">string</td><td rowspan="5">Inwieweit treffen die folgenden Aussagen auf Sie zu: <br><br>&emsp;Ich habe eine aktive Vorstellungskraft, bin fantasievoll.</td><td>1</td><td>trifft überhaupt nicht zu</td></tr>
+<tr class="row-odd"><td>2</td><td>trifft eher nicht zu</td></tr>
+<tr class="row-odd"><td>3</td><td>weder noch</td></tr>
+<tr class="row-odd"><td>4</td><td>eher zutreffend</td></tr>
+<tr class="row-odd"><td>5</td><td>trifft voll und ganz zu</td></tr>
+<tr class="row-even"><td rowspan="2">sop1</td><td rowspan="2">string</td><td rowspan="2">In der folgenden Frage geht es um Optimismus. Optimisten sind Menschen, die mit Zuversicht in die Zukunft blicken und meistens Gutes erwarten. Bitte schätzen Sie sich selbst ein: <br><br>&emsp;Wie optimistisch sind Sie im Allgemeinen?</td><td>1</td><td>Gar nicht optimistisch</td></tr>
+<tr class="row-even"><td>7</td><td>Sehr optimistisch</td></tr>
+<tr class="row-odd"><td rowspan="2">sop2</td><td rowspan="2">string</td><td rowspan="2">Jetzt geht es um Pessimismus. Pessimisten sind Menschen, die voller Zweifel in die Zukunft blicken und meistens Schlechtes erwarten. Bitte schätzen Sie sich selbst ein: <br><br>&emsp;Wie pessimistisch sind Sie im Allgemeinen?</td><td>1</td><td>Gar nicht optimistisch</td></tr>
+<tr class="row-odd"><td>7</td><td>Sehr optimistisch</td></tr>
+<tr class="row-even"><td rowspan="4">cope1</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe mich mit Arbeit oder anderen Sachen beschäftigt, um auf andere Gedanken zu kommen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cope2</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe mich darauf konzentriert, etwas an meiner Situation zu verändern.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">cope3</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe mir eingeredet, dass das alles nicht wahr ist.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cope5</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe aufmunternde Unterstützung von anderen erhalten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">cope6</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe es aufgegeben, mich damit zu beschäftigen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cope11</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Um das durchzustehen, habe ich mich mit Alkohol oder anderen Mitteln besänftigt.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">cope12</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe versucht, die Dinge von einer positiveren Seite zu betrachten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cope18</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe Witze darüber gemacht.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">cope21</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe offen gezeigt, wie schlecht ich mich fühle.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cope23</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe versucht, von anderen Menschen Rat oder Hilfe einzuholen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">cope24</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe gelernt, damit zu leben.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cope25</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe mir viele Gedanken darüber gemacht, was hier das Richtige wäre.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">cope26</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe mir für die Dinge, die mir widerfahren sind, selbst die Schuld gegeben.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cope27</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe gebetet oder meditiert.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">wcc3</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wandte mich der Arbeit oder anderen Aktivitäten zu, um mich davon abzulenken.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">wcc6</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich tat etwas, das vermutlich nichts nützte, hatte aber dabei das Gefühl, wenigstens etwas zu tun.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">wcc13</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich hoffte auf ein Wunder.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">wcc22</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich sagte mir selber Sachen vor, die es mir leichter machten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">wcc37</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich versuchte durch Essen, Trinken, Rauchen oder Medikamente, es mir besser gehen zu lassen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">wcc56</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich weigerte mich, das, was passiert war, wahrzunehmen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">wcc60</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wünschte, ich wäre eine stärkere Person - optimistischer und durchsetzungsfähiger.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">wcc65</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich flüchtete mich in Tagträume und stellte mir Zeiten vor, zu denen es mir mal besser ging, als in der gegenwärtigen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">wcc67</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich sann über phantastische Dinge nach und malte mir solche Sachen aus, die dazu beitragen konnten, dass sich meine Stimmung verbesserte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">wcc1</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich konzentrierte mich darauf, was als Nächstes zu tun war – auf den nächsten Schritt, den ich tun wollte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">wcc5</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich verhandelte oder schloss einen Kompromiss, um der Situation etwas Positives abzugewinnen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">wcc8</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich redete mit jemandem, um mehr über die Situation zu erfahren.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">wcc23</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich bekam eine neue Idee, etwas anderes und Schöpferisches zu tun.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">wcc28</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich machte etwas ganz Neues, was ich unter anderen Umständen sonst nie getan hätte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">wcc35</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich redete mit jemandem, der etwas Konkretes an dem Problem ändern konnte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">wcc44</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich führte eine Änderung ein, damit sich alles zum Besten wenden sollte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">wcc51</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich nahm einen Standpunkt ein und kämpfte für das, was ich wollte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">wcc55</td><td rowspan="4">string</td><td rowspan="4">Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wusste, was zu tun war, also strengte ich mich an und versuchte mit doppelter Kraft alles in die Wege zu leiten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csinv1</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich bemühte mich, das Problem zu lösen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csinv2</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe mich davon überzeugt, dass die Dinge nicht ganz so schlimm sind, wie Ich scheinen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csinv4</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe jemanden gefunden, der gut zuhören kann.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csinv7</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich erkannte, dass ich selber für meine Schwierigkeiten verantwortlich war und machte mir selber Vorwürfe.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csinv11</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich fragte mich, was wirklich wichtig ist und stellte fest, dass die Dinge doch nicht so schlimm waren.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csinv12</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich ließ meinen Emotionen freien Lauf.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csinv14</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich vermied es, über die Situation nachzudenken oder etwas zu tun.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csinv17</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich versuchte, meine Gefühle für mich zu behalten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csinv19</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe daran gearbeitet, die Probleme dieser Situation zu lösen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csinv21</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich ließ meine Gefühle raus, um den Stress abzubauen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csinv22</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich ließ mir von meinen Freunden helfen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csinv27</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich war der Meinung, die Situation gut bewältigt zu haben.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csinv24</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wünschte, die Situation würde verschwinden oder irgendwie vorbei sein.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csind2</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe Dinge neu angeordnet, damit mein Problem gelöst werden konnte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csind4</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich versuchte, mich vom Problem abzulenken.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csind5</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich habe Mitgefühl und Verständnis von jemandem akzeptiert.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csind8</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich setzte mir selbst einige Ziele, um mit der Situation umzugehen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csind10</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich hatte Tagträume von besseren Zeiten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csind11</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich versuchte verschiedene Wege, um das Problem zu lösen, bis ich einen fand, der funktioniert.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csind12</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich sprach mit einem Verwandten oder Freund über Ängste und Sorgen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csind16</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich richtete meine volle Aufmerksamkeit auf die Lösung des Problems.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csind18</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich sah mehr Fernsehen als sonst.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csind19</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wandte mich an einen Freund oder Fachmann, der mir helfen sollte, mich besser zu fühlen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csind20</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich blieb standhaft und kämpfte für das, was ich in der Situation wollte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csind22</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich vergrub mich in einem Hobby oder einer sportlichen Aktivität, um das Problem zu meiden.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csind24</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wandte mich an einen Freund und bat ihn um Rat, wie ich die Situation ändern könnte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csind27</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich fantasierte darüber, wie die Dinge anders hätten laufen können.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csind30</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wünschte, die Leute würden mich einfach in Ruhe lassen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">csind31</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich nahm Hilfe von einem Freund oder Verwandten an.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">csind33</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich versuchte, eine Vorgehensweise sorgfältig zu planen, anstatt auf Impulse zu reagieren.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">scq4</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich versuchte, Erleichterung im Gebet zu finden.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">scq14</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich versuchte, anderen Menschen zu beweisen, dass sie heuchlerisch sind.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">scq15</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich war wütend auf Gott/höheres Wesen, dass er/es mich verlassen hat.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">scq17</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich war mitfühlend gegenüber dem Schmerz anderer Personen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">ic1</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich suchte gezielt nach Informationen (z.B. Internet, Medien, Beratung).</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">ic3</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich versuchte Informationen darüber aus dem Weg zu gehen (z.B. Internet, Medien, Beratung).</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">denial1</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich glaubte, ich könne niemandem vertrauen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">pci2</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Mir kam es immer darauf an, etwas zu bewirken.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">pci4</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich zog aus alltäglichen Schwierigkeiten wichtige Erfahrungen, um mein Leben besser zu gestalten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">pci6</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wollte mit dem, was ich tat, etwas Wichtiges in dieser Welt bewegen.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">pci8</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Wenn die Dinge nicht so gut liefen, wartete ich lieber, bis sie sich von selbst regelten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">pci10</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich dachte immer daran, was man wohl noch verbessern könnte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">pci12</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich übernahm gerne Verantwortung und zog dabei oft für andere "den Karren aus dem Dreck".</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">pci14</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich baute nur auf sicherem Boden und ließ die Finger von Experimenten.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">pci16</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich hatte Freude daran, die Qualität meiner Arbeit zu verbessern.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cfsr1</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Wenn sich die Situation nicht verbesserte, zog ich eine andere Bewältigungsstrategie in Betracht.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">cfsr2</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wiederholte keine Bewältigungsstrategie, die die Situation verschlimmerte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cfsr4</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich bewältigte Stress, indem ich klare Ziele setze.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">cfsr6</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Auch wenn sich die Stresssituation verschlechtert hatte, konnte ich damit umgehen, indem ich eine andere Strategie verfolgte.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="4">cfsr8</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich konnte aufhören, eine unwirksame Bewältigungsstrategie zu verwenden.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-odd"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-even"><td rowspan="4">cfsr11</td><td rowspan="4">string</td><td rowspan="4">Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: <br><br>&emsp;Ich wusste, welche Bewältigungsstrategien effektiv und welche Strategien unwirksam waren.</td><td>1</td><td>stimmt überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>stimmt eher nicht</td></tr>
+<tr class="row-even"><td>3</td><td>stimmt ein wenig</td></tr>
+<tr class="row-even"><td>4</td><td>stimmt voll und ganz</td></tr>
+<tr class="row-odd"><td rowspan="3">sit1</td><td rowspan="3">string</td><td rowspan="3">Haben Sie bei der Beantwortung der vergangenen Aussagen zum Umgang mit Herausforderungen im Leben an eine bestimmte Situation gedacht haben?</td><td>0</td><td>Nein</td></tr>
+<tr class="row-odd"><td>1</td><td>Ja, ich habe an eine Situation gedacht</td></tr>
+<tr class="row-odd"><td>2</td><td>Ja, ich habe an mehrere Situationen gedacht</td></tr>
+<tr class="row-even"><td rowspan="9">sit2</td><td rowspan="9">string</td><td rowspan="9">Bitte wählen Sie aus den nachstehenden Kategorien diejenige aus, die am ehesten zu Ihrer erinnerten Situation passt:</td><td>1</td><td>Gesundheit (z.B. Krankheit, Schmerz, Unfall, Diagnose)</td></tr>
+<tr class="row-even"><td>2</td><td>Familie und soziale Beziehungen (z.B. Verlust, Trennung, Erziehung, Geburt)</td></tr>
+<tr class="row-even"><td>3</td><td>Arbeit (z.B. Jobverlust oder Wechsel, Konflikt, Mobbing)</td></tr>
+<tr class="row-even"><td>4</td><td>Finanzielle Belastungen (z.B. Kreditzahlungen, gestiegene Lebenshaltungskosten)</td></tr>
+<tr class="row-even"><td>5</td><td>Gewalt (z.B. emotional, körperlich)</td></tr>
+<tr class="row-even"><td>6</td><td>Diskriminierung (z.B. aufgrund des Aussehens, ethnischer Zugehörigkeit)</td></tr>
+<tr class="row-even"><td>7</td><td>Krieg oder Terrorismus (z.B. Verfolgung, Flucht)</td></tr>
+<tr class="row-even"><td>8</td><td>Andere, nicht genannte</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="3">sit3r1</td><td rowspan="3">string</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Gesundheit (z.B. Krankheit, Schmerz, Unfall, Diagnose)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-odd"><td>1</td><td>Checked</td></tr>
+<tr class="row-odd"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-even"><td rowspan="3">sit3r2</td><td rowspan="3">string</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Familie und soziale Beziehungen (z.B. Verlust, Trennung, Erziehung, Geburt)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-even"><td>1</td><td>Checked</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="3">sit3r3</td><td rowspan="3">string</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Arbeit (z.B. Jobverlust oder Wechsel, Konflikt, Mobbing)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-odd"><td>1</td><td>Checked</td></tr>
+<tr class="row-odd"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-even"><td rowspan="3">sit3r4</td><td rowspan="3">string</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Finanzielle Belastungen (z.B. Kreditzahlungen, gestiegene Lebenshaltungskosten)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-even"><td>1</td><td>Checked</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="3">sit3r5</td><td rowspan="3">string</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Gewalt (z.B. emotional, körperlich)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-odd"><td>1</td><td>Checked</td></tr>
+<tr class="row-odd"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-even"><td rowspan="3">sit3r6</td><td rowspan="3">string</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Diskriminierung (z.B. aufgrund des Aussehens, ethnischer Zugehörigkeit)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-even"><td>1</td><td>Checked</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="3">sit3r7</td><td rowspan="3">string</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Krieg oder Terrorismus (z.B. Verfolgung, Flucht)</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-odd"><td>1</td><td>Checked</td></tr>
+<tr class="row-odd"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-even"><td rowspan="3">sit3r8</td><td rowspan="3">string</td><td rowspan="3">Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: <br><br>&emsp;Andere, nicht genannte</td><td>0</td><td>Unchecked</td></tr>
+<tr class="row-even"><td>1</td><td>Checked</td></tr>
+<tr class="row-even"><td>-99</td><td>Systematisch fehlende Werte (z.B. bei Mehrfachantworten)</td></tr>
+<tr class="row-odd"><td rowspan="5">wemwbs1</td><td rowspan="5">string</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich habe mich in Bezug auf die Zukunft optimistisch gefühlt.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>häufig</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">wemwbs2</td><td rowspan="5">string</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich habe mich nützlich gefühlt.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-even"><td>2</td><td>selten</td></tr>
+<tr class="row-even"><td>3</td><td>manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>häufig</td></tr>
+<tr class="row-even"><td>5</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">wemwbs3</td><td rowspan="5">string</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich habe mich entspannt gefühlt.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>häufig</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">wemwbs6</td><td rowspan="5">string</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich bin mit Problemen gut umgegangen.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-even"><td>2</td><td>selten</td></tr>
+<tr class="row-even"><td>3</td><td>manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>häufig</td></tr>
+<tr class="row-even"><td>5</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">wemwbs7</td><td rowspan="5">string</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich konnte klar denken.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>häufig</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="5">wemwbs9</td><td rowspan="5">string</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich habe mich anderen Menschen nahe gefühlt.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-even"><td>2</td><td>selten</td></tr>
+<tr class="row-even"><td>3</td><td>manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>häufig</td></tr>
+<tr class="row-even"><td>5</td><td>immer</td></tr>
+<tr class="row-odd"><td rowspan="5">wemwbs11</td><td rowspan="5">string</td><td rowspan="5">Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: <br><br>&emsp;Ich war in der Lage, Entscheidungen zu treffen.</td><td>1</td><td>niemals</td></tr>
+<tr class="row-odd"><td>2</td><td>selten</td></tr>
+<tr class="row-odd"><td>3</td><td>manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>häufig</td></tr>
+<tr class="row-odd"><td>5</td><td>immer</td></tr>
+<tr class="row-even"><td rowspan="4">osss1</td><td rowspan="4">string</td><td rowspan="4">Wie viele Menschen stehen Ihnen so nahe, dass Sie sich auf sie verlassen können, wenn Sie ernste persönliche Probleme haben?</td><td>1</td><td>keine</td></tr>
+<tr class="row-even"><td>2</td><td>1 bis 2</td></tr>
+<tr class="row-even"><td>3</td><td>3 bis 5</td></tr>
+<tr class="row-even"><td>4</td><td>6 oder mehr</td></tr>
+<tr class="row-odd"><td rowspan="5">osss2</td><td rowspan="5">string</td><td rowspan="5">Wie viel Anteilnahme und Interesse zeigen andere Menschen an dem, was Sie tun?</td><td>1</td><td>keine</td></tr>
+<tr class="row-odd"><td>2</td><td>wenig</td></tr>
+<tr class="row-odd"><td>3</td><td>weder viel noch wenig</td></tr>
+<tr class="row-odd"><td>4</td><td>viel</td></tr>
+<tr class="row-odd"><td>5</td><td>sehr viel</td></tr>
+<tr class="row-even"><td rowspan="5">osss3</td><td rowspan="5">string</td><td rowspan="5">Wie einfach ist es für Sie, praktische Hilfe von Nachbarn zu erhalten, wenn Sie diese benötigen?</td><td>1</td><td>sehr schwierig</td></tr>
+<tr class="row-even"><td>2</td><td>schwierig</td></tr>
+<tr class="row-even"><td>3</td><td>möglich</td></tr>
+<tr class="row-even"><td>4</td><td>einfach</td></tr>
+<tr class="row-even"><td>5</td><td>sehr einfach</td></tr>
+<tr class="row-odd"><td rowspan="5">funkt1</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Können Sie Hausarbeiten erledigen, z. B. Staubsaugen oder Gartenarbeit?</td><td>1</td><td>Ohne jede Schwie-rigkeiten</td></tr>
+<tr class="row-odd"><td>2</td><td>Mit geringen Schwie-rigkeiten</td></tr>
+<tr class="row-odd"><td>3</td><td>Mit einigen Schwie-rigkeiten</td></tr>
+<tr class="row-odd"><td>4</td><td>Mit großen Schwie-rigkeiten</td></tr>
+<tr class="row-odd"><td>5</td><td>Kann ich gar nicht</td></tr>
+<tr class="row-even"><td rowspan="5">funkt2</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?</td><td>1</td><td>Ohne jede Schwie-rigkeiten</td></tr>
+<tr class="row-even"><td>2</td><td>Mit geringen Schwie-rigkeiten</td></tr>
+<tr class="row-even"><td>3</td><td>Mit einigen Schwie-rigkeiten</td></tr>
+<tr class="row-even"><td>4</td><td>Mit großen Schwie-rigkeiten</td></tr>
+<tr class="row-even"><td>5</td><td>Kann ich gar nicht</td></tr>
+<tr class="row-odd"><td rowspan="5">funkt3</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Können Sie mindestens 15 Minuten lang spazieren gehen?</td><td>1</td><td>Ohne jede Schwie-rigkeiten</td></tr>
+<tr class="row-odd"><td>2</td><td>Mit geringen Schwie-rigkeiten</td></tr>
+<tr class="row-odd"><td>3</td><td>Mit einigen Schwie-rigkeiten</td></tr>
+<tr class="row-odd"><td>4</td><td>Mit großen Schwie-rigkeiten</td></tr>
+<tr class="row-odd"><td>5</td><td>Kann ich gar nicht</td></tr>
+<tr class="row-even"><td rowspan="5">funkt4</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Können Sie Besorgungen machen und einkaufen gehen?</td><td>1</td><td>Ohne jede Schwie-rigkeiten</td></tr>
+<tr class="row-even"><td>2</td><td>Mit geringen Schwie-rigkeiten</td></tr>
+<tr class="row-even"><td>3</td><td>Mit einigen Schwie-rigkeiten</td></tr>
+<tr class="row-even"><td>4</td><td>Mit großen Schwie-rigkeiten</td></tr>
+<tr class="row-even"><td>5</td><td>Kann ich gar nicht</td></tr>
+<tr class="row-odd"><td rowspan="5">teilhab1</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-odd"><td>2</td><td>Selten</td></tr>
+<tr class="row-odd"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>Oft</td></tr>
+<tr class="row-odd"><td>5</td><td>Immer</td></tr>
+<tr class="row-even"><td rowspan="5">teilhab2</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-even"><td>2</td><td>Selten</td></tr>
+<tr class="row-even"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>Oft</td></tr>
+<tr class="row-even"><td>5</td><td>Immer</td></tr>
+<tr class="row-odd"><td rowspan="5">teilhab3</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).</td><td>1</td><td>Nie</td></tr>
+<tr class="row-odd"><td>2</td><td>Selten</td></tr>
+<tr class="row-odd"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>Oft</td></tr>
+<tr class="row-odd"><td>5</td><td>Immer</td></tr>
+<tr class="row-even"><td rowspan="5">teilhab4</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meinen Freunden machen möchte.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-even"><td>2</td><td>Selten</td></tr>
+<tr class="row-even"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>Oft</td></tr>
+<tr class="row-even"><td>5</td><td>Immer</td></tr>
+<tr class="row-odd"><td rowspan="5">fatig1</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich war erschöpft.</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-odd"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-odd"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-odd"><td>5</td><td>Sehr</td></tr>
+<tr class="row-even"><td rowspan="5">fatig2</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Es fiel mir schwer etwas anzufangen, weil ich müde war.</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-even"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-even"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-even"><td>5</td><td>Sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">fatig3</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie ausgelaugt fühlten Sie sich im Allgemeinen?</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-odd"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-odd"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-odd"><td>5</td><td>Sehr</td></tr>
+<tr class="row-even"><td rowspan="5">fatig4</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie erschöpft waren Sie im Allgemeinen?</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-even"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-even"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-even"><td>5</td><td>Sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">angst1</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fürchtete mich.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-odd"><td>2</td><td>Selten</td></tr>
+<tr class="row-odd"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>Oft</td></tr>
+<tr class="row-odd"><td>5</td><td>Immer</td></tr>
+<tr class="row-even"><td rowspan="5">angst2</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-even"><td>2</td><td>Selten</td></tr>
+<tr class="row-even"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>Oft</td></tr>
+<tr class="row-even"><td>5</td><td>Immer</td></tr>
+<tr class="row-odd"><td rowspan="5">angst3</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Meine Sorgen haben mich überwältigt.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-odd"><td>2</td><td>Selten</td></tr>
+<tr class="row-odd"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>Oft</td></tr>
+<tr class="row-odd"><td>5</td><td>Immer</td></tr>
+<tr class="row-even"><td rowspan="5">angst4</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich unruhig.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-even"><td>2</td><td>Selten</td></tr>
+<tr class="row-even"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>Oft</td></tr>
+<tr class="row-even"><td>5</td><td>Immer</td></tr>
+<tr class="row-odd"><td rowspan="5">depr1</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich wertlos.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-odd"><td>2</td><td>Selten</td></tr>
+<tr class="row-odd"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>Oft</td></tr>
+<tr class="row-odd"><td>5</td><td>Immer</td></tr>
+<tr class="row-even"><td rowspan="5">depr2</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich hilflos.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-even"><td>2</td><td>Selten</td></tr>
+<tr class="row-even"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>Oft</td></tr>
+<tr class="row-even"><td>5</td><td>Immer</td></tr>
+<tr class="row-odd"><td rowspan="5">depr3</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich niedergeschlagen.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-odd"><td>2</td><td>Selten</td></tr>
+<tr class="row-odd"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-odd"><td>4</td><td>Oft</td></tr>
+<tr class="row-odd"><td>5</td><td>Immer</td></tr>
+<tr class="row-even"><td rowspan="5">depr4</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich fühlte mich hoffnungslos.</td><td>1</td><td>Nie</td></tr>
+<tr class="row-even"><td>2</td><td>Selten</td></tr>
+<tr class="row-even"><td>3</td><td>Manchmal</td></tr>
+<tr class="row-even"><td>4</td><td>Oft</td></tr>
+<tr class="row-even"><td>5</td><td>Immer</td></tr>
+<tr class="row-odd"><td rowspan="5">schlaf1</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an.</td><td>1</td><td>Sehr schlecht</td></tr>
+<tr class="row-odd"><td>2</td><td>Schlecht</td></tr>
+<tr class="row-odd"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-odd"><td>4</td><td>Gut</td></tr>
+<tr class="row-odd"><td>5</td><td>Sehr gut</td></tr>
+<tr class="row-even"><td rowspan="5">schlaf2</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Mein Schlaf war erfrischend.</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-even"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-even"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-even"><td>5</td><td>Sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">schlaf3</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich hatte Schlafprobleme.</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-odd"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-odd"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-odd"><td>5</td><td>Sehr</td></tr>
+<tr class="row-even"><td rowspan="5">schlaf4</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Ich hatte Schwierigkeiten einzuschlafen.</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-even"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-even"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-even"><td>5</td><td>Sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">schmerz1</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-odd"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-odd"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-odd"><td>5</td><td>Sehr</td></tr>
+<tr class="row-even"><td rowspan="5">schmerz2</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie sehr beeinträchtigen Schmerzen Ihre häuslichen Tätigkeiten?</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-even"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-even"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-even"><td>5</td><td>Sehr</td></tr>
+<tr class="row-odd"><td rowspan="5">schmerz3</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeiten, an sozialen Aktivitäten teilzunehmen?</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-odd"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-odd"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-odd"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-odd"><td>5</td><td>Sehr</td></tr>
+<tr class="row-even"><td rowspan="5">schmerz4</td><td rowspan="5">string</td><td rowspan="5">Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: <br><br>&emsp;Wie sehr beeinträchtigen Schmerzen Sie bei Ihrer Hausarbeit?</td><td>1</td><td>Überhaupt nicht</td></tr>
+<tr class="row-even"><td>2</td><td>Ein wenig</td></tr>
+<tr class="row-even"><td>3</td><td>Mäßig</td></tr>
+<tr class="row-even"><td>4</td><td>Ziemlich</td></tr>
+<tr class="row-even"><td>5</td><td>Sehr</td></tr>
+<tr class="row-odd"><td rowspan="2">schmerz5</td><td rowspan="2">string</td><td rowspan="2">In den letzten 7 Tagen, wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?</td><td>0</td><td>Keine Schmerzen</td></tr>
+<tr class="row-odd"><td>10</td><td>Schlimmste vorstellbare Schmerzen</td></tr>
+</table></div></body></html>

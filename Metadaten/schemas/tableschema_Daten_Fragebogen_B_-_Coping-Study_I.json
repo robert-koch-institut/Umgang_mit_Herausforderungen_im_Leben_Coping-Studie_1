@@ -1,0 +1,5396 @@
+{
+    "title": "Datenschema Fragebogen B | Umgang mit Herausforderungen im Leben - Coping-Studie I",
+    "description": "Das vorliegenden Datenschema ist eine eindeutige, vollständige und maschinenlesbare Repräsentation der beantragbaren Rohdaten des Fragebogens B der Studie 'Umgang mit Herausforderungen im Leben - Coping-Studie I' mit allen Details. Das Datenschema orientiert sich am Datapackage-Format (v2). Informationen zum Datapackage Data Standard finden Sie unter https://datapackage.org/. Mehr Information über den Datensatz finden sie auf Zenodo (https://doi.org/10.5281/zenodo.13304390) oder Github (https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1)",
+    "fields": [
+        {
+            "name": "record",
+            "type": "integer",
+            "description": "Record number (Open numeric response)",
+            "constraints": {
+                "minimum": "1",
+                "maximum": "5343"
+            }
+        },
+        {
+            "name": "qtime",
+            "type": "number",
+            "description": "Interviewzeit in Sekunden",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "999999"
+            },
+            "decimalChar": "."
+        },
+        {
+            "name": "fb",
+            "type": "string",
+            "description": "Variante des Fragebogens",
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Fragebogen A"
+                },
+                {
+                    "value": "2",
+                    "label": "Fragebogen B"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2"
+                ]
+            }
+        },
+        {
+            "name": "age",
+            "type": "integer",
+            "description": "Wie alt sind Sie (Angabe in Jahren)?",
+            "constraints": {
+                "minimum": "0",
+                "maximum": "99"
+            }
+        },
+        {
+            "name": "sex",
+            "type": "string",
+            "description": "Welches Geschlecht haben Sie?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Männlich"
+                },
+                {
+                    "value": "2",
+                    "label": "Weiblich"
+                },
+                {
+                    "value": "3",
+                    "label": "Divers"
+                }
+            ]
+        },
+        {
+            "name": "fam",
+            "type": "string",
+            "description": "Welchen Familienstand haben Sie?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "verheiratet oder in fester Partnerschaft"
+                },
+                {
+                    "value": "2",
+                    "label": "verheiratet aber getrennt lebend"
+                },
+                {
+                    "value": "3",
+                    "label": "geschieden"
+                },
+                {
+                    "value": "4",
+                    "label": "verwitwet"
+                },
+                {
+                    "value": "5",
+                    "label": "ledig"
+                }
+            ]
+        },
+        {
+            "name": "school",
+            "type": "string",
+            "description": "Welchen höchsten allgemeinbildenden Schulabschluss haben Sie?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Haupt- oder Volksschulabschluss"
+                },
+                {
+                    "value": "2",
+                    "label": "Realschulabschluss/Mittlere Reife/Fachschulreife"
+                },
+                {
+                    "value": "3",
+                    "label": "POS (Polytechn. Oberschule) bzw. 10. Klasse (vor 1965: 8. Klasse)"
+                },
+                {
+                    "value": "4",
+                    "label": "Fachhochschulreife/Abschluss einer Fachoberschule"
+                },
+                {
+                    "value": "5",
+                    "label": "Abitur, allgemeine Hochschulreife"
+                },
+                {
+                    "value": "6",
+                    "label": "Anderen Schulabschluss (z.B. im Ausland erworben)"
+                },
+                {
+                    "value": "7",
+                    "label": "Schule beendet ohne Schulabschluss"
+                },
+                {
+                    "value": "8",
+                    "label": "Noch keinen Schulabschluss"
+                }
+            ]
+        },
+        {
+            "name": "employ",
+            "type": "string",
+            "description": "Welche Lebenssituation trifft derzeit überwiegend auf Sie zu?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Ich bin erwerbstätig in Vollzeit, gemeint ist auch Berufsausbildung oder Selbständigkeit"
+                },
+                {
+                    "value": "2",
+                    "label": "Ich bin erwerbstätig in Teilzeit, gemeint ist auch Berufsausbildung oder Selbständigkeit."
+                },
+                {
+                    "value": "3",
+                    "label": "Ich bin derzeit in Kurzarbeit."
+                },
+                {
+                    "value": "4",
+                    "label": "Ich bin geringfügig erwerbstätig, z.B. 450-Euro-Job, Minijob."
+                },
+                {
+                    "value": "5",
+                    "label": "Ich bin arbeitslos oder arbeitssuchend bei der Agentur für Arbeit gemeldet, gemeint ist auch \"Ein-Euro-Job\"."
+                },
+                {
+                    "value": "6",
+                    "label": "Ich bin im Ruhestand oder Vorruhestand."
+                },
+                {
+                    "value": "7",
+                    "label": "Ich bin Schüler, Student, Praktikant, Teilnehmer an Fortbildungsmaßnahmen, übe Freiwilligendienst aus."
+                },
+                {
+                    "value": "8",
+                    "label": "Ich bin als Hausfrau/Hausmann tätig, betreue Kinder oder hilfsbedürftige Personen."
+                },
+                {
+                    "value": "9",
+                    "label": "Ich bin aus anderen Gründen nicht erwerbstätig."
+                }
+            ]
+        },
+        {
+            "name": "migra1",
+            "type": "string",
+            "description": "In welchem Land sind Sie geboren?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "In Deutschland"
+                },
+                {
+                    "value": "2",
+                    "label": "In einem anderen Land"
+                }
+            ]
+        },
+        {
+            "name": "migra2",
+            "type": "string",
+            "description": "In welchem Land sind Ihre Eltern geboren?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Beide Elternteile in Deutschland"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein Elternteil in Deutschland, ein Elternteil in einem anderen Land"
+                },
+                {
+                    "value": "3",
+                    "label": "Beide Elternteile in einem anderen Land"
+                }
+            ]
+        },
+        {
+            "name": "asku1",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: In schwierigen Situationen kann ich mich auf meine Fähigkeiten verlassen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "asku2",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Die meisten Probleme kann ich aus eigener Kraft gut meistern.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "asku3",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Auch anstrengende und komplizierte Aufgaben kann ich in der Regel gut lösen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "ie1",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Ich habe mein Leben selbst in der Hand.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "ie2",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Wenn ich mich anstrenge, werde ich auch Erfolg haben.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "ie3",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft. Egal ob privat oder im Beruf: Mein Leben wird zum großen Teil von anderen bestimmt.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "ie4",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Meine Pläne werden oft vom Schicksal durchkreuzt.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft gar nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft wenig zu"
+                },
+                {
+                    "value": "3",
+                    "label": "trifft etwas zu"
+                },
+                {
+                    "value": "4",
+                    "label": "trifft ziemlich zu"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "swl",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Ich bin mit meinem Leben zufrieden.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "starke Ablehnung"
+                },
+                {
+                    "value": "2",
+                    "label": "Ablehnung"
+                },
+                {
+                    "value": "3",
+                    "label": "leichte Ablehnung"
+                },
+                {
+                    "value": "4",
+                    "label": "weder Ablehnung noch Zustimmung"
+                },
+                {
+                    "value": "5",
+                    "label": "leichte Zustimmung"
+                },
+                {
+                    "value": "6",
+                    "label": "Zustimmung"
+                },
+                {
+                    "value": "7",
+                    "label": "starke Zustimmung"
+                }
+            ]
+        },
+        {
+            "name": "hap",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Ich fühle mich im Allgemeinen glücklich.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "starke Ablehnung"
+                },
+                {
+                    "value": "2",
+                    "label": "Ablehnung"
+                },
+                {
+                    "value": "3",
+                    "label": "leichte Ablehnung"
+                },
+                {
+                    "value": "4",
+                    "label": "weder Ablehnung noch Zustimmung"
+                },
+                {
+                    "value": "5",
+                    "label": "leichte Zustimmung"
+                },
+                {
+                    "value": "6",
+                    "label": "Zustimmung"
+                },
+                {
+                    "value": "7",
+                    "label": "starke Zustimmung"
+                }
+            ]
+        },
+        {
+            "name": "mean",
+            "type": "string",
+            "description": "Die folgenden Aussagen können mehr oder weniger auf Sie zutreffen. Bitte geben Sie bei jeder Aussage an, inwieweit diese auf Sie persönlich zutrifft: Ich kenne den Sinn meines Lebens.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "starke Ablehnung"
+                },
+                {
+                    "value": "2",
+                    "label": "Ablehnung"
+                },
+                {
+                    "value": "3",
+                    "label": "leichte Ablehnung"
+                },
+                {
+                    "value": "4",
+                    "label": "weder Ablehnung noch Zustimmung"
+                },
+                {
+                    "value": "5",
+                    "label": "leichte Zustimmung"
+                },
+                {
+                    "value": "6",
+                    "label": "Zustimmung"
+                },
+                {
+                    "value": "7",
+                    "label": "starke Zustimmung"
+                }
+            ]
+        },
+        {
+            "name": "bfi1",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich bin eher zurückhaltend, reserviert.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "bfi2",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich schenke anderen leicht Vertrauen, glaube an das Gute im Menschen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "bfi3",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich bin bequem, neige zur Faulheit.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "bfi4",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich bin entspannt, lasse mich durch Stress nicht aus der Ruhe bringen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "bfi5",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich habe nur wenig künstlerisches Interesse.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "bfi6",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich gehe aus mir heraus, bin gesellig.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "bfi7",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich neige dazu, andere zu kritisieren.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "bfi8",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich erledige Aufgaben gründlich.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "bfi9",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich werde leicht nervös und unsicher.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "bfi10",
+            "type": "string",
+            "description": "Inwieweit treffen die folgenden Aussagen auf Sie zu: Ich habe eine aktive Vorstellungskraft, bin fantasievoll.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "trifft überhaupt nicht zu"
+                },
+                {
+                    "value": "2",
+                    "label": "trifft eher nicht zu"
+                },
+                {
+                    "value": "3",
+                    "label": "weder noch"
+                },
+                {
+                    "value": "4",
+                    "label": "eher zutreffend"
+                },
+                {
+                    "value": "5",
+                    "label": "trifft voll und ganz zu"
+                }
+            ]
+        },
+        {
+            "name": "sop1",
+            "type": "string",
+            "description": "In der folgenden Frage geht es um Optimismus. Optimisten sind Menschen, die mit Zuversicht in die Zukunft blicken und meistens Gutes erwarten. Bitte schätzen Sie sich selbst ein: Wie optimistisch sind Sie im Allgemeinen?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Gar nicht optimistisch"
+                },
+                {
+                    "value": "7",
+                    "label": "Sehr optimistisch"
+                }
+            ]
+        },
+        {
+            "name": "sop2",
+            "type": "string",
+            "description": "Jetzt geht es um Pessimismus. Pessimisten sind Menschen, die voller Zweifel in die Zukunft blicken und meistens Schlechtes erwarten. Bitte schätzen Sie sich selbst ein: Wie pessimistisch sind Sie im Allgemeinen?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Gar nicht optimistisch"
+                },
+                {
+                    "value": "7",
+                    "label": "Sehr optimistisch"
+                }
+            ]
+        },
+        {
+            "name": "cope4",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe Alkohol oder andere Mittel zu mir genommen, um mich besser zu fühlen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope7",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe aktiv gehandelt, um die Situation zu verbessern.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope8",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wollte einfach nicht glauben, dass mir das passiert.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope9",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe meinen Gefühlen freien Lauf gelassen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope10",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe andere Menschen um Hilfe und Rat gebeten.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope13",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe mich selbst kritisiert und mir Vorwürfe gemacht.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope14",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe versucht, mir einen Plan zu überlegen, was ich tun kann.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope15",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Jemand hat mich getröstet und mir Verständnis entgegengebracht.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope16",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe gar nicht mehr versucht, die Situation in den Griff zu kriegen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope17",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe versucht, etwas Gutes in dem zu finden, was mir passiert ist.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope19",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe etwas unternommen, um mich abzulenken.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope20",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe mich damit abgefunden, dass es passiert ist.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope22",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe versucht, Halt in meinem Glauben zu finden.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cope28",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe alles mit Humor genommen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc4",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich meinte, es würde sich mit der Zeit ergeben, man könnte nicht mehr tun als abzuwarten.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc11",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich kritisierte oder belehrte mich selbst.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc14",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich fügte mich meinem Schicksal; manchmal hat man einfach Pech.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc36",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe das Ereignis zuerst hinter mir gelassen, versuchte mich auszuruhen oder Urlaub zu machen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc48",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich ließ andere nicht wissen, wie schlecht die Dinge standen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc57",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe mir versprochen, dass es das nächste Mal anders sein würde.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc63",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wünschte mir, meine Gefühle und Empfindungen darüber ändern zu können.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc66",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich stellte mir in meiner Phantasie vor, wie das Ereignis wohl ausgehen könnte.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc68",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wünschte mir, dass die Situation verschwinden oder sich in Nichts auflösen würde.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc2",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe das Problem immer wieder gewälzt und versucht, es zu verstehen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc7",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich brachte die verantwortliche Person dazu, ihre Meinung zu ändern.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc12",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich versuchte, keine Möglichkeit zu verspielen, sondern alles noch ein bisschen offen zu halten.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc25",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich ließ mich von Experten beraten und folgte dem Rat.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc30",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich entwarf einen Plan, was ich zu tun hatte, und führte ihn auch durch.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc40",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich versuchte, nichts Überstürztes zu tun oder meiner ersten Neigung nicht nachzugeben.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc47",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich bat eine von mir hoch angesehene Person um Rat und verhielt mich danach.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc53",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich besann mich auf vergangene Erfahrungen; ich war schon einmal in einer ähnlichen Situation.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "wcc64",
+            "type": "string",
+            "description": "Wir interessieren uns dafür, wie Sie mit Herausforderungen, Problemen oder Belastungen in Ihrem Leben umgehen. Bitte wählen Sie im Folgenden für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich änderte an mir selbst etwas, um mit dem Ereignis besser fertig werden zu können.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv3",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich ließ einfach meine Gefühle raus.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv5",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe versucht, das Ganze zu vergessen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv6",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wünschte, die Situation hätte nie begonnen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv8",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich ließ keinen wissen, wie ich mich fühlte.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv9",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe es vermieden, mit Menschen zusammen zu sein.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv10",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe das Problem direkt angepackt.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv13",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe mit jemandem gesprochen, der mir sehr nahesteht.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv15",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wünschte, ich würde mich nie wieder in einer solchen Situation befinden.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv16",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe mich selbst dafür kritisiert, was passiert ist.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv18",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe einige Zeit mit meinen Freunden verbracht.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv20",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich versuchte, mich auf die gute Seite der Dinge zu konzentrieren.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv23",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich tat so, als ob nichts passiert wäre.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv25",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich gab mir selbst die Schuld.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csinv26",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe meine Gedanken und Gefühle für mich behalten.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind1",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich beschrieb einem Freund meine Gefühle.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind3",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich habe an viele Ideen gedacht, bevor ich mich entschied, was zu tun ist.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind6",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich tat alles, um andere davon abzuhalten, zu sehen, wie schlimm die Dinge wirklich sind.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind7",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich sprach mit Menschen über die Situation, weil es mir besser ging, darüber zu sprechen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind9",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wog meine Optionen sorgfältig ab.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind13",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich verbrachte mehr Zeit als sonst allein.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind14",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich erzählte Leuten von der Situation, weil darüber zu sprechen hilft, Lösungen zu finden.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind15",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich überlegte, was getan werden muss, um die Dinge zu bereinigen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind17",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich machte einen Plan in meinem Kopf.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind21",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich vermied es im Allgemeinen, mit Menschen zusammen zu sein.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind23",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wandte mich an einen Freund, der mir helfen sollte, mich mit dem Problem besser zu fühlen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind25",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich nahm die Sympathie und das Verständnis von Freunden an, die das gleiche Problem hatten.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind26",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich schlief mehr als üblich.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind28",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich identifizierte mich mit Charakteren in Filmen oder Romanen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind29",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich versuchte, das Problem zu lösen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "csind32",
+            "type": "string",
+            "description": "Bitte wählen Sie im Folgenden wieder für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich versuchte, mir eine Rückversicherung von denen zu holen, die mich am besten kennen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "scq20",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich versuchte, Harmonie mit der Natur zu finden.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "scq24",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich überzeugte mich selbst davon, dass mein Leben keinen Sinn hat.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "scq27",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich versuchte, mich selbst besser kennenzulernen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "ic2",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Wenn es die Situation zuließ, versuchte ich mich bereits im Vorhinein darauf vorzubereiten, indem ich gezielt nach Informationen suchte (z.B. Internet, Medien, Beratung).",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "ic4",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich versuchte nicht mehr als nötig darüber zu erfahren (z.B. Internet, Medien, Beratung).",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "ic5",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich suchte so lange oder häufig nach Informationen, dass es mir manchmal nicht mehr guttat und von anderen wichtigen Dingen abhielt (z.B. Internet, Medien, Beratung).",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "denial2",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich glaubte, andere belügen mich.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "pci1",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Hatte ich ein Ziel erreicht, dann suchte ich mir eine größere Herausforderung.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "pci3",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: In brenzligen Situationen hatte ich oft das Gefühl, auf verlorenem Posten zu stehen. ",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "pci5",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich malte mir meine Wunschträume genau aus, um sie zu verwirklichen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "pci7",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Wenn ich mir etwas vorgenommen hatte, konnte mich nichts mehr aufhalten.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "pci9",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich konzentrierte mich für meinen Erfolg auf das, was ich für wesentlich hielt und ließ mich dabei nicht ablenken.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "pci11",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich arbeitete mich nach oben, auch wenn der Weg oft steinig war.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "pci13",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Wenn es \"hart auf hart kam\", nahm ich die Sache in die Hand und fand einen Weg.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "pci15",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich steckte meine Ziele nicht allzu hoch, weil ich oft befürchtete, dass ich scheitere.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "pci17",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich suchte mir gern Herausforderungen und ging dafür auch Wagnisse ein.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cfsr3",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich konnte aufhören, eine Bewältigungsstrategie zu verfolgen, die die Situation verschlimmerte.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cfsr5",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Wenn ich nicht gut zurechtgekommen bin, verwendete ich eine alternative Bewältigungsstrategie.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cfsr7",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich wusste, ob eine Bewältigungsstrategie erfolgreich oder nicht erfolgreich war.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cfsr9",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich konnte aufhören, eine gescheiterte Bewältigungsstrategie zu verfolgen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cfsr10",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Auch wenn ich mit Stress nicht zurechtkam, konnte ich mir eine neue Bewältigungsstrategie ausdenken.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "cfsr12",
+            "type": "string",
+            "description": "Bitte wählen Sie noch ein letztes Mal für jede Aussage jeweils die Antwort, die am ehesten auf Ihr Denken, Fühlen oder Handeln in vergangenen schwierigen und für Sie persönlich bedeutsamen Situationen zutrifft. Es gibt keine richtigen oder falschen Antworten: Ich konnte erfassen, ob eine von mir verfolgte Bewältigungsstrategie gut funktioniert hat.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "stimmt überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "stimmt eher nicht"
+                },
+                {
+                    "value": "3",
+                    "label": "stimmt ein wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "stimmt voll und ganz"
+                }
+            ]
+        },
+        {
+            "name": "sit1",
+            "type": "string",
+            "description": "Haben Sie bei der Beantwortung der vergangenen Aussagen zum Umgang mit Herausforderungen im Leben an eine bestimmte Situation gedacht haben?",
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1",
+                    "2"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Nein"
+                },
+                {
+                    "value": "1",
+                    "label": "Ja, ich habe an eine Situation gedacht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ja, ich habe an mehrere Situationen gedacht"
+                }
+            ]
+        },
+        {
+            "name": "sit2",
+            "type": "string",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenige aus, die am ehesten zu Ihrer erinnerten Situation passt:",
+            "missingValues": [
+                "-99"
+            ],
+            "missingValues_v2": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Gesundheit (z.B. Krankheit, Schmerz, Unfall, Diagnose)"
+                },
+                {
+                    "value": "2",
+                    "label": "Familie und soziale Beziehungen (z.B. Verlust, Trennung, Erziehung, Geburt)"
+                },
+                {
+                    "value": "3",
+                    "label": "Arbeit (z.B. Jobverlust oder Wechsel, Konflikt, Mobbing)"
+                },
+                {
+                    "value": "4",
+                    "label": "Finanzielle Belastungen (z.B. Kreditzahlungen, gestiegene Lebenshaltungskosten)"
+                },
+                {
+                    "value": "5",
+                    "label": "Gewalt (z.B. emotional, körperlich)"
+                },
+                {
+                    "value": "6",
+                    "label": "Diskriminierung (z.B. aufgrund des Aussehens, ethnischer Zugehörigkeit)"
+                },
+                {
+                    "value": "7",
+                    "label": "Krieg oder Terrorismus (z.B. Verfolgung, Flucht)"
+                },
+                {
+                    "value": "8",
+                    "label": "Andere, nicht genannte"
+                }
+            ]
+        },
+        {
+            "name": "sit3r1",
+            "type": "string",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Gesundheit (z.B. Krankheit, Schmerz, Unfall, Diagnose)",
+            "missingValues": [
+                "-99"
+            ],
+            "missingValues_v2": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r2",
+            "type": "string",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Familie und soziale Beziehungen (z.B. Verlust, Trennung, Erziehung, Geburt)",
+            "missingValues": [
+                "-99"
+            ],
+            "missingValues_v2": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r3",
+            "type": "string",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Arbeit (z.B. Jobverlust oder Wechsel, Konflikt, Mobbing)",
+            "missingValues": [
+                "-99"
+            ],
+            "missingValues_v2": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r4",
+            "type": "string",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Finanzielle Belastungen (z.B. Kreditzahlungen, gestiegene Lebenshaltungskosten)",
+            "missingValues": [
+                "-99"
+            ],
+            "missingValues_v2": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r5",
+            "type": "string",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Gewalt (z.B. emotional, körperlich)",
+            "missingValues": [
+                "-99"
+            ],
+            "missingValues_v2": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r6",
+            "type": "string",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Diskriminierung (z.B. aufgrund des Aussehens, ethnischer Zugehörigkeit)",
+            "missingValues": [
+                "-99"
+            ],
+            "missingValues_v2": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r7",
+            "type": "string",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Krieg oder Terrorismus (z.B. Verfolgung, Flucht)",
+            "missingValues": [
+                "-99"
+            ],
+            "missingValues_v2": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "sit3r8",
+            "type": "string",
+            "description": "Bitte wählen Sie aus den nachstehenden Kategorien diejenigen aus, die am ehesten zu Ihren erinnerten Situationen passen: Andere, nicht genannte",
+            "missingValues": [
+                "-99"
+            ],
+            "missingValues_v2": [
+                {
+                    "value": "-99",
+                    "label": "Systematisch fehlende Werte (z.B. bei Mehrfachantworten)"
+                }
+            ],
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Unchecked"
+                },
+                {
+                    "value": "1",
+                    "label": "Checked"
+                }
+            ]
+        },
+        {
+            "name": "wemwbs1",
+            "type": "string",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich habe mich in Bezug auf die Zukunft optimistisch gefühlt.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "wemwbs2",
+            "type": "string",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich habe mich nützlich gefühlt.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "wemwbs3",
+            "type": "string",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich habe mich entspannt gefühlt.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "wemwbs6",
+            "type": "string",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich bin mit Problemen gut umgegangen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "wemwbs7",
+            "type": "string",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich konnte klar denken.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "wemwbs9",
+            "type": "string",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich habe mich anderen Menschen nahe gefühlt.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "wemwbs11",
+            "type": "string",
+            "description": "Abschließend möchten wir Ihnen noch einige Fragen zu Ihrer Person und Ihrem Wohlbefinden stellen.Nachfolgend stehen einige Aussagen zu Gefühlen und Gedanken. Bitte kreuzen Sie die Antwort an, die Ihre Erfahrungen in den letzten 2 Wochen am besten beschreibt: Ich war in der Lage, Entscheidungen zu treffen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "niemals"
+                },
+                {
+                    "value": "2",
+                    "label": "selten"
+                },
+                {
+                    "value": "3",
+                    "label": "manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "häufig"
+                },
+                {
+                    "value": "5",
+                    "label": "immer"
+                }
+            ]
+        },
+        {
+            "name": "osss1",
+            "type": "string",
+            "description": "Wie viele Menschen stehen Ihnen so nahe, dass Sie sich auf sie verlassen können, wenn Sie ernste persönliche Probleme haben?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "keine"
+                },
+                {
+                    "value": "2",
+                    "label": "1 bis 2"
+                },
+                {
+                    "value": "3",
+                    "label": "3 bis 5"
+                },
+                {
+                    "value": "4",
+                    "label": "6 oder mehr"
+                }
+            ]
+        },
+        {
+            "name": "osss2",
+            "type": "string",
+            "description": "Wie viel Anteilnahme und Interesse zeigen andere Menschen an dem, was Sie tun?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "keine"
+                },
+                {
+                    "value": "2",
+                    "label": "wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "weder viel noch wenig"
+                },
+                {
+                    "value": "4",
+                    "label": "viel"
+                },
+                {
+                    "value": "5",
+                    "label": "sehr viel"
+                }
+            ]
+        },
+        {
+            "name": "osss3",
+            "type": "string",
+            "description": "Wie einfach ist es für Sie, praktische Hilfe von Nachbarn zu erhalten, wenn Sie diese benötigen?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "sehr schwierig"
+                },
+                {
+                    "value": "2",
+                    "label": "schwierig"
+                },
+                {
+                    "value": "3",
+                    "label": "möglich"
+                },
+                {
+                    "value": "4",
+                    "label": "einfach"
+                },
+                {
+                    "value": "5",
+                    "label": "sehr einfach"
+                }
+            ]
+        },
+        {
+            "name": "funkt1",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Können Sie Hausarbeiten erledigen, z. B. Staubsaugen oder Gartenarbeit?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Ohne jede Schwie-rigkeiten"
+                },
+                {
+                    "value": "2",
+                    "label": "Mit geringen Schwie-rigkeiten"
+                },
+                {
+                    "value": "3",
+                    "label": "Mit einigen Schwie-rigkeiten"
+                },
+                {
+                    "value": "4",
+                    "label": "Mit großen Schwie-rigkeiten"
+                },
+                {
+                    "value": "5",
+                    "label": "Kann ich gar nicht"
+                }
+            ]
+        },
+        {
+            "name": "funkt2",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Können Sie mit normaler Geschwindigkeit Treppen hoch- und runtergehen?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Ohne jede Schwie-rigkeiten"
+                },
+                {
+                    "value": "2",
+                    "label": "Mit geringen Schwie-rigkeiten"
+                },
+                {
+                    "value": "3",
+                    "label": "Mit einigen Schwie-rigkeiten"
+                },
+                {
+                    "value": "4",
+                    "label": "Mit großen Schwie-rigkeiten"
+                },
+                {
+                    "value": "5",
+                    "label": "Kann ich gar nicht"
+                }
+            ]
+        },
+        {
+            "name": "funkt3",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Können Sie mindestens 15 Minuten lang spazieren gehen?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Ohne jede Schwie-rigkeiten"
+                },
+                {
+                    "value": "2",
+                    "label": "Mit geringen Schwie-rigkeiten"
+                },
+                {
+                    "value": "3",
+                    "label": "Mit einigen Schwie-rigkeiten"
+                },
+                {
+                    "value": "4",
+                    "label": "Mit großen Schwie-rigkeiten"
+                },
+                {
+                    "value": "5",
+                    "label": "Kann ich gar nicht"
+                }
+            ]
+        },
+        {
+            "name": "funkt4",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Können Sie Besorgungen machen und einkaufen gehen?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Ohne jede Schwie-rigkeiten"
+                },
+                {
+                    "value": "2",
+                    "label": "Mit geringen Schwie-rigkeiten"
+                },
+                {
+                    "value": "3",
+                    "label": "Mit einigen Schwie-rigkeiten"
+                },
+                {
+                    "value": "4",
+                    "label": "Mit großen Schwie-rigkeiten"
+                },
+                {
+                    "value": "5",
+                    "label": "Kann ich gar nicht"
+                }
+            ]
+        },
+        {
+            "name": "teilhab1",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fällt mir schwer, allen meinen regelmäßigen Freizeitaktivitäten mit anderen nachzugehen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "teilhab2",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meiner Familie machen möchte.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "teilhab3",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fällt mir schwer, meine gewohnte Arbeit zu erledigen (einschließlich der Arbeit zu Hause).",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "teilhab4",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fällt mir schwer, allen Aktivitäten nachzugehen, die ich mit meinen Freunden machen möchte.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "fatig1",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich war erschöpft.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "fatig2",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Es fiel mir schwer etwas anzufangen, weil ich müde war.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "fatig3",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie ausgelaugt fühlten Sie sich im Allgemeinen?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "fatig4",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie erschöpft waren Sie im Allgemeinen?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "angst1",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fürchtete mich.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "angst2",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fand es schwer, auf etwas anderes zu achten als auf meine Angst.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "angst3",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Meine Sorgen haben mich überwältigt.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "angst4",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich unruhig.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "depr1",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich wertlos.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "depr2",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich hilflos.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "depr3",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich niedergeschlagen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "depr4",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich fühlte mich hoffnungslos.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Nie"
+                },
+                {
+                    "value": "2",
+                    "label": "Selten"
+                },
+                {
+                    "value": "3",
+                    "label": "Manchmal"
+                },
+                {
+                    "value": "4",
+                    "label": "Oft"
+                },
+                {
+                    "value": "5",
+                    "label": "Immer"
+                }
+            ]
+        },
+        {
+            "name": "schlaf1",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Sehr schlecht"
+                },
+                {
+                    "value": "2",
+                    "label": "Schlecht"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Gut"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr gut"
+                }
+            ]
+        },
+        {
+            "name": "schlaf2",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Mein Schlaf war erfrischend.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "schlaf3",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich hatte Schlafprobleme.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "schlaf4",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Ich hatte Schwierigkeiten einzuschlafen.",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "schmerz1",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie sehr beeinträchtigen Schmerzen Ihre Alltagsaktivitäten?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "schmerz2",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie sehr beeinträchtigen Schmerzen Ihre häuslichen Tätigkeiten?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "schmerz3",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie sehr beeinträchtigen Schmerzen Ihre Fähigkeiten, an sozialen Aktivitäten teilzunehmen?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "schmerz4",
+            "type": "string",
+            "description": "Im Folgenden geht es darum, ob Sie sich derzeit durch gesundheitliche Beschwerden im Alltag beeinträchtigt fühlen. Bitte kreuzen Sie zu jeder Frage oder Aussage ein Kästchen an: Wie sehr beeinträchtigen Schmerzen Sie bei Ihrer Hausarbeit?",
+            "constraints": {
+                "enum": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "1",
+                    "label": "Überhaupt nicht"
+                },
+                {
+                    "value": "2",
+                    "label": "Ein wenig"
+                },
+                {
+                    "value": "3",
+                    "label": "Mäßig"
+                },
+                {
+                    "value": "4",
+                    "label": "Ziemlich"
+                },
+                {
+                    "value": "5",
+                    "label": "Sehr"
+                }
+            ]
+        },
+        {
+            "name": "schmerz5",
+            "type": "string",
+            "description": "In den letzten 7 Tagen, wie würden Sie Ihre Schmerzen im Allgemeinen einschätzen?",
+            "constraints": {
+                "enum": [
+                    "0",
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5",
+                    "6",
+                    "7",
+                    "8",
+                    "9",
+                    "10"
+                ]
+            },
+            "categories": [
+                {
+                    "value": "0",
+                    "label": "Keine Schmerzen"
+                },
+                {
+                    "value": "10",
+                    "label": "Schlimmste vorstellbare Schmerzen"
+                }
+            ]
+        }
+    ]
+}

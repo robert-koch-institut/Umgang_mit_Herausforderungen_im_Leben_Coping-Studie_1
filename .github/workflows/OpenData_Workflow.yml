@@ -16,8 +16,8 @@ jobs:
       OPENCODE_GROUPID: 2781
       OPENCODE_ACCESS_USER: RKIOpenData
       
-      # Push to GovData Repositoy
-      GOVDATA_ACTIVE: true
+      # Push to GovData Repository
+      GOVDATA_ACTIVE: false
       GOVDATA_DESTINATION_REPO: robert-koch-institut/Metadaten_fuer_GovData
       GOVDATA_METADATA_PATH: Metadaten/govdata.ttl
       
@@ -25,10 +25,10 @@ jobs:
       NFDI4HEALTH_ACTIVE: true
       NFDI4HEALTH_METADATA_PATH: Metadaten/nfdi4health.json
       
-      #Build Open Data Website
+      # Build Open Data Website
       WEBSITE_ACTIVE: true
 
-      #Update Github Details
+      # Update Github Details
       GITHUB_DETAILS_ACTIVE: true
           
       
