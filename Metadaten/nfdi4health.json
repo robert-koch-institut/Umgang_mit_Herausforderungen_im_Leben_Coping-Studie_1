@@ -1,0 +1,145 @@
+{
+  "resource": {
+    "classification": {
+      "type": "Dataset"
+    },
+    "descriptions": [
+      {
+        "language": "DE (German)",
+        "text": "Die Coping-Studie I untersucht Bewältigungsstrategien im Umgang mit Herausforderungen und dient der Entwicklung einer Kurzskala zur Messung von Coping-Strategien. Die Studie wurde im November 2022 als querschnittliche Online-Befragung mit 2.633 Erwachsenen im Alter von 18 bis 74 Jahren mit Wohnsitz in Deutschland durchgeführt. Erhoben wurden neben verschiedenen Coping-Strategien und -Situationen auch soziodemografische Merkmale, psychologische Konstrukte, psychisches Wohlbefinden und gesundheitsbezogene Lebensqualität.\n\nDer veröffentlichte Datensatz stellt Struktur- und Kontextinformationen zu den Studiendaten als Open Data bereit. Die zugrunde liegenden Originaldaten können über das Forschungsdatenzentrum des Robert Koch-Instituts für wissenschaftliche Nachnutzungen beantragt werden.\n"
+      }
+    ],
+    "titles": [
+      {
+        "language": "DE (German)",
+        "text": "Umgang mit Herausforderungen im Leben - Coping-Studie I"
+      }
+    ],
+    "ids": [
+      {
+        "identifier": "10.5281/zenodo.13304391",
+        "typeGeneral": "Dataset",
+        "relationType": "A references B",
+        "scheme": "DOI"
+      },
+      {
+        "identifier": "https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1",
+        "typeGeneral": "Dataset",
+        "relationType": "A references B",
+        "scheme": "URL"
+      }
+    ],
+    "provenance": {
+      "dataSource": "Automatically uploaded: Other"
+    },
+    "keywords": [
+      {
+        "label": "Public health",
+        "code": "http://id.nlm.nih.gov/mesh/D011634"
+      },
+      {
+        "label": "Mental Health",
+        "code": "http://id.nlm.nih.gov/mesh/D008603"
+      },
+      {
+        "label": "Psychological well-being",
+        "code": "http://id.nlm.nih.gov/mesh/D000092862"
+      },
+      {
+        "label": "Psychological Resilience",
+        "code": "http://id.nlm.nih.gov/mesh/D055500"
+      },
+      {
+        "label": "Health Promotion",
+        "code": "http://id.nlm.nih.gov/mesh/D006293"
+      },
+      {
+        "label": "Health Behavior",
+        "code": "http://id.nlm.nih.gov/mesh/D015438"
+      },
+      {
+        "label": "Psychosocial Functioning",
+        "code": "http://id.nlm.nih.gov/mesh/D000083623"
+      },
+      {
+        "label": "Coping",
+        "code": "http://id.nlm.nih.gov/mesh/D000223"
+      },
+      {
+        "label": "Stress",
+        "code": "http://id.nlm.nih.gov/mesh/D013315"
+      },
+      {
+        "label": "Crises"
+      },
+      {
+        "label": "Instrument development"
+      },
+      {
+        "label": "Scale development"
+      },
+      {
+        "label": "Short Scale"
+      },
+      {
+        "label": "Validity"
+      },
+      {
+        "label": "Reliability"
+      },
+      {
+        "label": "Germany",
+        "code": "http://id.nlm.nih.gov/mesh/D005858"
+      },
+      {
+        "label": "Open Data"
+      },
+      {
+        "label": "RKI"
+      }
+    ],
+    "languages": [
+      "DE (German)"
+    ],
+    "nonStudyDetails": {
+      "useRights": {
+        "confirmations": {
+          "authority": true,
+          "irrevocability": true,
+          "terms": true,
+          "supportByLicensing": true
+        },
+        "label": "CC BY 4.0 (Creative Commons Attribution 4.0 International)"
+      },
+      "version": "2026-10-26"
+    },
+    "webpage": "https://robert-koch-institut.github.io/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1",
+    "contributors": [
+      {
+        "nameType": "Personal",
+        "affiliations": [
+          {
+            "name": "Robert Koch-Institut",
+            "identifiers": [
+              {
+                "identifier": "01k5qnb77",
+                "scheme": "ROR"
+              }
+            ]
+          }
+        ],
+        "personal": {
+          "type": "Creator/Author",
+          "givenName": "Caroline",
+          "familyName": "Cohrdes",
+          "identifiers": [
+            {
+              "identifier": "0000-0003-0063-4145",
+              "scheme": "ORCID"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

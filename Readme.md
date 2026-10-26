@@ -21,7 +21,7 @@ Dokumentation
 
 **Zitieren**  
 <!-- CITATION_START: {"citation_style": "apa", "markdown_style": "plain"} -->
-Cohrdes, C. (2026). Umgang mit Herausforderungen im Leben - Coping-Studie I [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.13304390](https://doi.org/10.5281/zenodo.13304390)
+Cohrdes, C. (2026). Umgang mit Herausforderungen im Leben - Coping-Studie I [Data set]. Zenodo. [https://doi.org/10.5281/zenodo.13304391](https://doi.org/10.5281/zenodo.13304391)
 <!-- CITATION_END -->
 
 
@@ -441,7 +441,7 @@ Die Beispieldaten dienen vor allem dazu, sich vor der eigentlichen Datenbereitst
 
 ### Metadaten  
 
-Zur Erhöhung der Auffindbarkeit sind die bereitgestellten Daten mit Metadaten beschrieben. Über GitHub Actions werden Metadaten an die entsprechenden Plattformen verteilt. Für jede Plattform existiert eine spezifische Metadatendatei. Diese Dateien sind im Metadatenordner hinterlegt:  
+Zur Erhöhung der Auffindbarkeit sind die bereitgestellten Daten mit Metadaten beschrieben. Über GitHub Actions werden Metadaten an die entsprechenden Plattformen verteilt. Für jede Plattform existiert eine spezifische Metadatendatei, diese sind im Metadatenordner hinterlegt:  
 
 > [Metadaten/](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1/tree/main/Metadaten/) 
 
@@ -485,7 +485,7 @@ Offene Forschungsdaten des RKI werden auf [Zenodo.org](http://Zenodo.org/), [Git
 
 Der Datensatz "Umgang mit Herausforderungen im Leben - Coping-Studie I" ist lizenziert unter der [Creative Commons Namensnennung 4.0 International Public License | CC-BY 4.0 International](https://creativecommons.org/licenses/by/4.0/deed.de).  
 
-Die im Datensatz bereitgestellten Daten können unter der Bedingung der Namensnennung des Robert Koch-Instituts als Quelle frei genutzt werden. Das bedeutet, dass jede Person das Recht hat, die Daten zu verarbeiten und zu verändern, Derivate des Datensatzes zu erstellen und sie für kommerzielle und nicht kommerzielle Zwecke zu nutzen. Weitere Informationen zur Lizenz finden sich in der [LICENSE](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1/blob/main/LICENSE) bzw. [LIZENZ](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1/blob/main/LIZENZ)-Datei des Datensatzes.  
+Die im Datensatz bereitgestellten Daten sind, unter Bedingung der Namensnennung des Robert Koch-Instituts als Quelle, frei verfügbar. Das bedeutet, dass jede Person das Recht hat, die Daten zu verarbeiten und zu verändern, Derivate des Datensatzes zu erstellen und sie für kommerzielle und nicht kommerzielle Zwecke zu nutzen. Weitere Informationen zur Lizenz finden sich in der [LICENSE](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1/blob/main/LICENSE)- bzw. [LIZENZ](https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1/blob/main/LIZENZ)-Datei des Datensatzes.  
 <!-- FOOTER_END -->
 
 

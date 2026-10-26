@@ -1,0 +1,64 @@
+{
+  "title": "Umgang mit Herausforderungen im Leben - Coping-Studie I",
+  "description": "<p>Die Coping-Studie I untersucht Bewältigungsstrategien im Umgang mit Herausforderungen und dient der Entwicklung einer Kurzskala zur Messung von Coping-Strategien. Die Studie wurde im November 2022 als querschnittliche Online-Befragung mit 2.633 Erwachsenen im Alter von 18 bis 74 Jahren mit Wohnsitz in Deutschland durchgeführt. Erhoben wurden neben verschiedenen Coping-Strategien und -Situationen auch soziodemografische Merkmale, psychologische Konstrukte, psychisches Wohlbefinden und gesundheitsbezogene Lebensqualität.</p>\n<p>Der veröffentlichte Datensatz stellt Struktur- und Kontextinformationen zu den Studiendaten als Open Data bereit. Die zugrunde liegenden Originaldaten können über das Forschungsdatenzentrum des Robert Koch-Instituts für wissenschaftliche Nachnutzungen beantragt werden.</p>",
+  "upload_type": "other",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "language": "deu",
+  "communities": [
+    {
+      "identifier": "robertkochinstitut"
+    }
+  ],
+  "creators": [
+    {
+      "name": "Cohrdes, Caroline",
+      "affiliation": "Robert Koch-Institut",
+      "orcid": "0000-0003-0063-4145"
+    }
+  ],
+  "contributors": [],
+  "keywords": [
+    "Public health",
+    "Mental Health",
+    "Psychological well-being",
+    "Psychological Resilience",
+    "Health Promotion",
+    "Health Behavior",
+    "Psychosocial Functioning",
+    "Coping",
+    "Stress",
+    "Crises",
+    "Instrument development",
+    "Scale development",
+    "Short Scale",
+    "Validity",
+    "Reliability",
+    "Germany",
+    "Open Data",
+    "RKI"
+  ],
+  "subjects": [],
+  "publication_date": "2026-10-26",
+  "version": "2022-12-06",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/robert-koch-institut/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1",
+      "relation": "isSupplementTo",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://robert-koch-institut.github.io/Umgang_mit_Herausforderungen_im_Leben_Coping-Studie_1",
+      "relation": "isDescribedBy",
+      "resource_type": "other"
+    }
+  ],
+  "dates": [
+    {
+      "start": "2022-12-06T00:00:00+01:00",
+      "end": "2022-12-06T00:00:00+01:00",
+      "type": "Created",
+      "description": "Date when the published data was created"
+    }
+  ]
+}
