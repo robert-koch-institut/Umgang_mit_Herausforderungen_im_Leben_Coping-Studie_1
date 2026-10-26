@@ -507,6 +507,8 @@ Carver CS. You want to measure coping but your protocol's too long: consider the
 Charzyńska E. Multidimensional approach toward spiritual coping: construction and validation of the Spiritual Coping Questionnaire (SCQ). J Relig Health. 2015;54(5):1629-46. https://doi.org/10.1007/s10943-014-9892-5 
 Diener E, Emmons RA, Larsen RJ, Griffin S. The satisfaction with life scale. J Pers Assess. 1985;49(1):71-5. https://doi.org/10.1207/s15327752jpa4901_13
 
+Cohrdes C. Umgang mit Herausforderungen im Leben - Coping-Studie II [Data set]. Zenodo. 2025. https://doi.org/10.5281/zenodo.12542554
+
 EU Statistics on Income and Living Conditions (EU-SILC). https://ec.europa.eu/eurostat/web/microdata/european-union-statistics-on-income-and-living-conditions
 
 Fischer F, Gibbons C, Coste J, Valderas JM, Rose M, Leplège A. Measurement invariance and general population reference values of the PROMIS Profile 29 in the UK, France, and Germany. Qual Life Res. 2018;27(4):999-1014. https://doi.org/10.1007/s11136-018-1785-8 
